@@ -1,13 +1,15 @@
 import { Component } from '@angular/core';
-import { NxWelcomeComponent } from './nx-welcome.component';
+import { CategoriesComponent } from './views/categories/categories.component';
+import { TasksComponent } from './views/tasks/tasks.component';
 
 @Component({
   standalone: true,
-  imports: [NxWelcomeComponent],
+  imports: [CategoriesComponent, TasksComponent],
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css'],
 })
+
 export class AppComponent {
   title = 'todo';
 }
